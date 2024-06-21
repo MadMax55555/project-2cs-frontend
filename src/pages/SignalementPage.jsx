@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from "../components/Header";
 import ESIImg from "../assets/images/ESIImg.png";
-import Footer from '../components/Footer';
+import Footer from '../components/Fotter';
 import { BiChevronRight } from "react-icons/bi";
 
 const SignalementPage = () => {

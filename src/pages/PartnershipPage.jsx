@@ -10,7 +10,7 @@ import PresentationSection2Inv from "../components/PresentationSection2Inv";
 import Projects from "../components/projects";
 import AIproject from "../assets/images/AIproject.png";
 import OurPartners from "../components/ourPartners";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 
 const PartnershipPage = () => {
   return (

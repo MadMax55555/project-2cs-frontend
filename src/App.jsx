@@ -18,6 +18,10 @@ import Academicss from "./pages/Academics";
 import ArticlePage from "./articles/article1";
 import ScrollToTop from "./utils/ScrollToTop";
 import ProgramsDetails from "./pages/ProgramsDetails";
+import YouAreStudent from './pages/YouAreStudent';
+import YouAreVisitor from './pages/YouAreVisitor';
+import YouAreTeacher from './pages/YouAreTeacher';
+import YouAreCompany from './pages/YouAreCompany';
 
 const App = () => {
   return (
@@ -45,6 +49,10 @@ const App = () => {
         <Route path="/Academics" element={<Academicss />} />
         <Route path="/articles/1" element={<ArticlePage />} />
         <Route path="/ProgramsDetails" element={<ProgramsDetails />} />
+        <Route path="/student" element={<YouAreStudent/>} />
+        <Route path="/teacher" element={<YouAreTeacher/>} />
+        <Route path="/visitor" element={<YouAreVisitor/>} />
+        <Route path="/entreprise" element={<YouAreCompany/>} />
         {/* Render ComponentsPage for /components */}
       </Routes>
     </Router>

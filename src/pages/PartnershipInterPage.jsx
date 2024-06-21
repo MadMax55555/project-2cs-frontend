@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Projects from "../components/projects";
 import internationalImg from "../assets/images/internationalImg.png";
 import AIproject from "../assets/images/AIproject.png";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import Information from "../components/Information";
 import infoPI1 from "../assets/images/infoPI1.svg";
 import infoPI2 from "../assets/images/infoPI2.svg";

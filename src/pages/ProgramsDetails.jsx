@@ -1,6 +1,6 @@
 import HeroSection2 from "../components/HeroSection2";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import FormationCard from "../components/FormationCard";

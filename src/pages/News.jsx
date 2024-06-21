@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import HeroSection2 from "../components/HeroSection2";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import MostViewedArticlesSection from "../components/MostViewedArticlesSection";
 import NewsListWithSearch from "../components/NewsListWithSearch";
 

@@ -7,7 +7,7 @@ import axios from "axios";
 import Projects from "../components/projects";
 import NatImg from "../assets/images/NatImg.png";
 import AIproject from "../assets/images/AIproject.png";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import Information from "../components/Information";
 import infoPN1 from "../assets/images/infoPN1.svg";
 import infoPN2 from "../assets/images/infoPN2.svg";

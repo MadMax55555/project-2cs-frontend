@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import PresentationSection from "../components/PresentationSection";
 import LibrarySection from "../components/LibrarySection";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import Academicss from "../components/Academics";
 
 function Academics() {

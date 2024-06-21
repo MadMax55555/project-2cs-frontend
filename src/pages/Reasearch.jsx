@@ -12,7 +12,7 @@ import PresentationSection2 from "../components/PresentationSection2";
 import LibrarySection from "../components/LibrarySection";
 import ResearchTeamsSection from "../components/ResearchTeamsSection";
 import LaboratoryRegulationsSection from "../components/LaboratoryRegulationsSection";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import Information from "../components/Information";
 import info_img1 from "/images/Vector.png";
 import info_img2 from "/images/Vector (1).png";

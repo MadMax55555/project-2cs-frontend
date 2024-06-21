@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import lifeImg from "../assets/images/lifeImg.png";
 import AchievementsSection from "../components/Achievement";
 import ClubsSection from "../components/Clubs";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 import EventSection from "../components/EventSection";
 
 const LifePage = () => {

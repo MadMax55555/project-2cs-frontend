@@ -10,7 +10,7 @@ import info_img4 from "/images/Vector (4).png";
 import PrepromotionTrainingSection from '../components/PrepromotionTrainingSection';
 import TrainingSection from '../components/TrainingSection';
 import LaboratoryRegulationsSection from '../components/LaboratoryRegulationsSection';
-import Footer from '../components/Footer';
+import Footer from '../components/Fotter';
 
 function FormationContinue() {
     const infoData = [

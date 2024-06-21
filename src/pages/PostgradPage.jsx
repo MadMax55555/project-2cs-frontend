@@ -11,7 +11,7 @@ import Postgrad2 from "../assets/images/postgrad2.png";
 import Postgrad3 from "../assets/images/postgrad3.jpg";
 import PostgradImg from "../assets/images/postgradImg.jpg";
 import Postgradregulations from "../components/Postgradregulations";
-import Footer from "../components/Footer";
+import Footer from "../components/Fotter";
 
 const PostgradPage = () => {
   const infoData = [
