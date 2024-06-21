@@ -9,7 +9,7 @@ function PrepromotionTrainingSection() {
   const [formations, setFormations] = useState([]);
   useEffect(() => {
     axios
-      .get("https://project-2cs-backend.onrender.com/formations")
+      .get("https://project-2cs-backend.onrender.com/formations/formation5")
       .then((response) => {
         setFormations(response.data);
       })
