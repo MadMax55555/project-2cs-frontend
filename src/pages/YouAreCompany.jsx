@@ -7,10 +7,12 @@ import Image4 from '../assets/images/youare13.png'
 import Image5 from '../assets/images/youare14.png'
 import Image6 from '../assets/images/youare15.png'
 import Footer from '../components/Fotter'
+import Header from '../components/Header';
 
 export default function YouAreCompany() {
   return (
     <>
+    <Header />
     <div className="gap-24 flex flex-col items-center justify-center min-h-screen" style={{ backgroundColor: '#F6FAFF' }}>
       <img src={Image1} alt="Full Width Image" className="w-screen h-screen object-cover" />
 
