@@ -25,9 +25,18 @@ const Header = () => {
     { name: "About", path: "/about" },
   ];
 
+  const YouAreOptions = [
+    { name: "Student", path: "/student" },
+    { name: "Entreprise", path: "/entreprise" },
+    { name: "Alumni", path: "/alumni" },
+    { name: "Teacher", path: "/teacher" },
+    { name: "Visitor", path: "/visitor" },
+  ];
+
   const [transNav, setTransNav] = useState(true);
   const [hideMenu, setHideMenu] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const changeNavColor = () => {
     if (window.scrollY === 0) setTransNav(true);
@@ -42,6 +51,10 @@ const Header = () => {
       setHideMenu(true);
     }
     setPrevScrollPos(currentScrollPos);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
   };
 
   useEffect(() => {
@@ -125,9 +138,9 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-4 relative">
           <SearchPopup transNav={transNav} />
-          <div className="flex items-center flex-col cursor-pointer">
+          <div className="flex items-center flex-col cursor-pointer" onClick={toggleDropdown}>
             <MdOutlinePersonSearch
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
@@ -140,6 +153,19 @@ const Header = () => {
             >
               You Are
             </span>
+            {dropdownVisible && (
+              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md w-40">
+                <ul>
+                  {YouAreOptions.map((option, index) => (
+                    <li key={index} className="px-4 py-2 hover:bg-gray-200">
+                      <Link to={option.path} className="block text-black">
+                        {option.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>
