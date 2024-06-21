@@ -9,14 +9,17 @@ import Image6 from '../assets/images/youare5.png'
 import Image7 from '../assets/images/youare6.png'
 import Footer from '../components/Fotter'
 import Header from '../components/Header';
+import HeroSection2 from '../components/HeroSection2'
 
 export default function YouAreStudent() {
   return (
     <>
     <Header />
     <div className="gap-24 flex flex-col items-center justify-center min-h-screen" style={{ backgroundColor: '#F6FAFF' }}>
-      <img src={Image1} alt="Full Width Image" className="w-screen h-screen object-cover" />
-
+      <HeroSection2 
+            Image={Image1}
+            Titre={<>Student</>}
+        />
       <div className="grid grid-cols-2 gap-x-10 gap-y-10 mt-4 max-w-screen-lg w-full">
         <div className="flex flex-col items-center gap-4">
           <img src={Image2} alt="Image 2" className="w-full h-72 object-cover" />
