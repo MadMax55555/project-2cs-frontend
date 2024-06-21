@@ -1,4 +1,4 @@
-import { BiChevronRight } from "react-icons/bi";
+import Button from './Button';
 
 function LibrarySection({ Title, Subtitle, Image, LinkTo }) {
   return (
@@ -15,11 +15,8 @@ function LibrarySection({ Title, Subtitle, Image, LinkTo }) {
         <div className="bg-main-blue h-full w-full absolute opacity-15 z-0" />
         <img src={Image} className="h-full" alt="ESi Students" />
       </div>
-      <a href={LinkTo} className="flex justify-center ">
-        <button className="flex items-center gap-x-4 my-2 px-10 py-2 font-medium text-white bg-main-blue group">
-          <span>Learn More About</span>
-          <BiChevronRight className="text-lg group-hover:translate-x-2 transition" />
-        </button>
+      <a href={LinkTo} className="">
+        <Button />
       </a>
     </div>
   );
