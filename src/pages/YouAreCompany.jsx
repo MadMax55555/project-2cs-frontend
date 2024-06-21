@@ -14,11 +14,12 @@ export default function YouAreCompany() {
   return (
     <>
     <Header />
-    <div className="gap-24 flex flex-col items-center justify-center min-h-screen" style={{ backgroundColor: '#F6FAFF' }}>
+    
       <HeroSection2 
             Image={Image1}
             Titre={<>Entreprise</>}
         />
+        <div className="gap-24 flex flex-col items-center justify-center min-h-screen" style={{ backgroundColor: '#F6FAFF' }}>
       <div className="grid grid-cols-2 gap-x-10 gap-y-10 mt-4 max-w-screen-lg w-full">
         <div className="flex flex-col items-center gap-4">
           <img src={Image2} alt="Image 2" className="w-full h-72 object-cover" />
