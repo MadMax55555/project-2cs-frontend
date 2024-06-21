@@ -54,7 +54,7 @@ function FormationContinue() {
         <PrepromotionTrainingSection />
         <TrainingSection />
         <LaboratoryRegulationsSection 
-          Title="Laboratory Regulations"
+          Title="Regulations"
           Regulations={regulations}
         />
         <Footer />
