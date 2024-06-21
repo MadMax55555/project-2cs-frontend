@@ -139,7 +139,7 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2 sm:gap-4 relative">
           <SearchPopup transNav={transNav} />
-          <div className="flex items-center flex-col cursor-pointer" onClick={toggleDropdown} onMouseLeave={setDropdownVisible(false)}>
+          <div className="flex items-center flex-col cursor-pointer" onClick={toggleDropdown} >
             <MdOutlinePersonSearch
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
