@@ -13,7 +13,7 @@ export default function YouAreVisitor() {
   return (
     <>
     <Header />
-    <div className="gap-24 flex flex-col items-center justify-center min-h-screen" style={{ backgroundColor: '#F6FAFF' }}>
+    <div>
     <HeroSection2 
             Image={Image1}
             Titre={<>Visitor</>}
