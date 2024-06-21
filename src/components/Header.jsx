@@ -32,6 +32,7 @@ const Header = () => {
     { name: "Teacher", path: "/teacher" },
     { name: "Visitor", path: "/visitor" },
   ];
+
   const [transNav, setTransNav] = useState(true);
   const [hideMenu, setHideMenu] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
@@ -75,7 +76,7 @@ const Header = () => {
     <div
       className={`fixed z-50 top-0 flex flex-col items-center w-full ${
         hideMenu ? "-translate-y-full" : "translate-y-0"
-      } ${!transNav ? "bg-gradient-to-b from-black to-transparent" : ""} transition-transform duration-300`}
+      } ${!transNav ? "bg-gradient-to-b from-black to-transparent" : ""}`}
     >
       <nav
         className={`flex flex-col items-center w-full ${
@@ -137,9 +138,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div
-          className="relative flex items-center"
-        >
+        <div className="flex items-center gap-2 sm:gap-4 relative">
           <SearchPopup transNav={transNav} />
           <div className="flex items-center flex-col cursor-pointer">
             <MdOutlinePersonSearch
@@ -151,9 +150,7 @@ const Header = () => {
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
               } text-xs font-medium text-center`}
-              
-              onMouseEnter={() => setDropdownVisible(true)}
-              onMouseLeave={() => setDropdownVisible(false)}
+              onClick={toggleDropdown}
             >
               You Are
             </span>
