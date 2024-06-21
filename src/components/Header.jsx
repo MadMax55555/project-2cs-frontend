@@ -24,7 +24,6 @@ const Header = () => {
     { name: "Life at ESI", path: "/Lifeesi" },
     { name: "About", path: "/about" },
   ];
-
   const YouAreOptions = [
     { name: "Student", path: "/student" },
     { name: "Entreprise", path: "/entreprise" },
@@ -140,7 +139,7 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2 sm:gap-4 relative">
           <SearchPopup transNav={transNav} />
-          <div className="flex items-center flex-col cursor-pointer">
+          <div className="flex items-center flex-col cursor-pointer" onClick={toggleDropdown} onMouseLeave={setDropdownVisible(false)}>
             <MdOutlinePersonSearch
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
@@ -150,7 +149,6 @@ const Header = () => {
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
               } text-xs font-medium text-center`}
-              onClick={toggleDropdown}
             >
               You Are
             </span>
