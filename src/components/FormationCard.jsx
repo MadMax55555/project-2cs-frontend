@@ -4,7 +4,7 @@ import React from "react";
 function FormationCard({ Image, Title, Description, Duration }) {
   return (
     <div className="h-80 w-56 bg-white shadow-xl">
-      <img src={`/images/${Image}`} className="h-[60%] w-full object-cover" />
+      <img src={`/images/${Image}`} className="h-[60%] w-full object-cover bg-white" />
       <div className="flex flex-col justify-between p-4">
         <p className="text-[#444] font-semibold text-base text-center max-h-[36%] overflow-hidden">
           {Title}
