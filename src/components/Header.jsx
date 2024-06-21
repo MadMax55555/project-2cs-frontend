@@ -138,9 +138,7 @@ const Header = () => {
           </ul>
         </nav>
         <div
-          className="relative flex items-center gap-2 sm:gap-4"
-          onMouseEnter={() => setDropdownVisible(true)}
-          onMouseLeave={() => setDropdownVisible(false)}
+          className="relative flex items-center"
         >
           <SearchPopup transNav={transNav} />
           <div className="flex items-center flex-col cursor-pointer">
@@ -153,6 +151,9 @@ const Header = () => {
               className={`${
                 !transNav ? "text-[#000]" : "text-white"
               } text-xs font-medium text-center`}
+              
+              onMouseEnter={() => setDropdownVisible(true)}
+              onMouseLeave={() => setDropdownVisible(false)}
             >
               You Are
             </span>
