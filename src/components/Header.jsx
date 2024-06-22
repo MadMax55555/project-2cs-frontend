@@ -27,7 +27,7 @@ const Header = () => {
   const YouAreOptions = [
     { name: "Student", path: "/student" },
     { name: "Entreprise", path: "/entreprise" },
-    { name: "Alumni", path: "/alumni" },
+    { name: "Alumni", path: "/Alumni" },
     { name: "Teacher", path: "/teacher" },
     { name: "Visitor", path: "/visitor" },
   ];
@@ -138,8 +138,13 @@ const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-2 sm:gap-4 relative">
-          <SearchPopup transNav={transNav} />
-          <div className="flex items-center flex-col cursor-pointer" onClick={toggleDropdown} >
+          <SearchPopup transNav={transNav} />  
+
+          
+          <div
+            className="flex items-center flex-col cursor-pointer"
+            onClick={toggleDropdown}
+          >
             <MdOutlinePersonSearch
               className={`${
                 !transNav ? "text-[#000]" : "text-white"

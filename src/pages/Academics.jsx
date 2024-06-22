@@ -2,8 +2,9 @@ import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import PresentationSection from "../components/PresentationSection";
 import LibrarySection from "../components/LibrarySection";
-import Footer from "../components/Fotter";
+import Footer from "../components/Footer";
 import Academicss from "../components/Academics";
+import OurProfessors from "../components/OurProfessors";
 
 function Academics() {
   return (
@@ -35,6 +36,7 @@ function Academics() {
                     and a three-year second cycle.
                 `}
         ButtonText="Learn More About"
+        LinkTo={"/EngineerCurriculum"}
       />
       <LibrarySection
         Title="Post-graduation"
@@ -42,6 +44,7 @@ function Academics() {
         Image="/images/Mask group.png"
         LinkTo="/Postgrad"
       />
+      <OurProfessors />
       <Footer />
     </div>
   );

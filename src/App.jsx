@@ -18,10 +18,13 @@ import Academicss from "./pages/Academics";
 import ArticlePage from "./articles/article1";
 import ScrollToTop from "./utils/ScrollToTop";
 import ProgramsDetails from "./pages/ProgramsDetails";
-import YouAreStudent from './pages/YouAreStudent';
-import YouAreVisitor from './pages/YouAreVisitor';
-import YouAreTeacher from './pages/YouAreTeacher';
-import YouAreCompany from './pages/YouAreCompany';
+import YouAreStudent from "./pages/YouAreStudent";
+import YouAreVisitor from "./pages/YouAreVisitor";
+import YouAreTeacher from "./pages/YouAreTeacher";
+import YouAreCompany from "./pages/YouAreCompany";
+import OurProfessorsPage from "./pages/OurProfessorsPage";
+import EngineerCurriculum from "./pages/EngineerCurriculum";
+import AlumniPage from "./pages/Alumni";
 
 const App = () => {
   return (
@@ -39,6 +42,7 @@ const App = () => {
         <Route path="/training-themes" element={<TrainingThemes />} />
         <Route path="/Lifeesi" element={<LifePage />} />
         <Route path="/Postgrad" element={<Postgrad />} />
+        <Route path="/Alumni" element={<AlumniPage />} />
         <Route
           path="/PartnershipInterPage"
           element={<PartnershipInterPage />}
@@ -49,10 +53,12 @@ const App = () => {
         <Route path="/Academics" element={<Academicss />} />
         <Route path="/articles/1" element={<ArticlePage />} />
         <Route path="/ProgramsDetails" element={<ProgramsDetails />} />
-        <Route path="/student" element={<YouAreStudent/>} />
-        <Route path="/teacher" element={<YouAreTeacher/>} />
-        <Route path="/visitor" element={<YouAreVisitor/>} />
-        <Route path="/entreprise" element={<YouAreCompany/>} />
+        <Route path="/OurProfessorsPage" element={<OurProfessorsPage />} />
+        <Route path="/EngineerCurriculum" element={<EngineerCurriculum />} />
+        <Route path="/student" element={<YouAreStudent />} />
+        <Route path="/teacher" element={<YouAreTeacher />} />
+        <Route path="/visitor" element={<YouAreVisitor />} />
+        <Route path="/entreprise" element={<YouAreCompany />} />
         {/* Render ComponentsPage for /components */}
       </Routes>
     </Router>
